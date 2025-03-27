@@ -8,9 +8,50 @@
     font-style: normal;
 }
 
+html,
 body {
-    font-family: "FiraCode", monospace;
+    height: 100%;
     margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
+    overflow-y: hidden; /* Disable vertical scrolling */
+}
+
+/* Main container adjustments */
+.cv-container {
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent content overflow */
+    padding: 40px 60px !important; /* Increased padding for print-like layout */
+    box-shadow: none !important; /* Remove shadow for clean look */
+}
+
+/* Section compact styling */
+section {
+    margin-bottom: 1.2rem !important;
+}
+
+/* Education and Awards side-by-side */
+.education-awards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+@media print {
+    body {
+        zoom: 0.9; /* Scale down for A4 paper */
+        background: white !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .cv-container {
+        padding: 0 !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 }

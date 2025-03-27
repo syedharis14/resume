@@ -5,21 +5,25 @@
         <TechnicalSkillsSection />
         <ExperienceSection />
         <ProjectsSection />
-        <EducationSection />
-        <AwardsSection />
+
+        <div class="education-awards-container">
+            <EducationSection />
+            <AwardsSection />
+        </div>
+
         <FooterSection />
     </div>
 </template>
 
 <script setup>
+import AwardsSection from "#components/AwardsSection.vue";
+import EducationSection from "#components/EducationSection.vue";
+import ExperienceSection from "#components/ExperienceSection.vue";
+import FooterSection from "#components/FooterSection.vue";
 import HeaderSection from "#components/HeaderSection.vue";
 import ProfileSection from "#components/ProfileSection.vue";
-import TechnicalSkillsSection from "#components/TechnicalSkillsSection.vue";
-import ExperienceSection from "#components/ExperienceSection.vue";
 import ProjectsSection from "#components/ProjectsSection.vue";
-import EducationSection from "#components/EducationSection.vue";
-import AwardsSection from "#components/AwardsSection.vue";
-import FooterSection from "#components/FooterSection.vue";
+import TechnicalSkillsSection from "#components/TechnicalSkillsSection.vue";
 </script>
 
 <style scoped>
