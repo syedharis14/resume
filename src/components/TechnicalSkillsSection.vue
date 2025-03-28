@@ -38,4 +38,3 @@
     margin-bottom: 0.5rem;
 }
 </style>
-/ExperienceSection.vue
