@@ -1,32 +1,50 @@
 <template>
     <footer class="footer">
-        <p>© 2025 Syed Haris Bin Aamir. All rights reserved.</p>
-        <div class="links">
-            <a href="mailto:syedharis14@gmail.com">Email</a> | <a href="tel:03135183127">Phone</a> |
-            <a href="https://linkedin.com/in/syed-haris-024295184" target="_blank">LinkedIn</a>
+        <div class="social-icons">
+            <a href="mailto:syedharis14@gmail.com" target="_blank">
+                <MailIcon class="icon" />
+            </a>
+            <a href="https://github.com/syedharis14" target="_blank">
+                <GithubIcon class="icon" />
+            </a>
+            <a href="https://linkedin.com/in/syed-haris-024295184" target="_blank">
+                <LinkedinIcon class="icon" />
+            </a>
         </div>
+        <p>© {{ currentYear }} Syed Haris Bin Aamir. All rights reserved.</p>
     </footer>
 </template>
 
 <script setup>
-// No additional logic needed
+import { ref } from "vue";
+import { MailIcon, GithubIcon, LinkedinIcon } from "lucide-vue-next";
+
+const currentYear = ref(new Date().getFullYear());
 </script>
 
 <style scoped>
 .footer {
     text-align: center;
+    padding: 1rem 0;
+    background: #f8f9fa;
     margin-top: 2rem;
-    border-top: 1px solid #ddd;
-    padding-top: 1rem;
-    font-size: 0.9em;
-    color: #555;
 }
-.links a {
-    color: inherit;
-    text-decoration: none;
-    margin: 0 0.5rem;
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 0.5rem;
 }
-.links a:hover {
-    text-decoration: underline;
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: #2563eb;
+    transition: color 0.3s ease-in-out;
+}
+
+.icon:hover {
+    color: #1e40af;
 }
 </style>

@@ -9,6 +9,9 @@
             <ul>
                 <li v-for="point in project.details" :key="point">{{ point }}</li>
             </ul>
+            <p v-if="project.link">
+                <a :href="project.link" target="_blank">View Project</a>
+            </p>
         </div>
     </section>
 </template>
@@ -23,7 +26,8 @@ const projects = [
             "Designed & developed a scalable V2 architecture using React, NestJS, and Prisma ORM.",
             "Migrated legacy MERN-based codebase, reducing technical debt.",
             "Led a team of 4 engineers, conducting code reviews & mentorship."
-        ]
+        ],
+        link: "https://beta.relayautomotive.com/login"
     },
     {
         name: "Polar Adventure",
@@ -33,7 +37,8 @@ const projects = [
             "Led development of an expedition platform for Arctic & Antarctic tours.",
             "Integrated third-party cruise data & built an intuitive admin panel.",
             "Developed RBAC & enabled bulk data management for efficient operations."
-        ]
+        ],
+        link: "https://polaradventure.com/"
     },
     {
         name: "TripMerchant",
@@ -43,7 +48,8 @@ const projects = [
             "Developed a SaaS platform for membership-based branded travel websites.",
             "Designed & implemented multi-tenancy with Sequelize ORM.",
             "Built an admin panel for internal teams to manage trips & partnerships."
-        ]
+        ],
+        link: "http://tripmerchant.com/"
     },
     {
         name: "git-ai-commit (NPM Package)",
@@ -74,5 +80,14 @@ const projects = [
     font-style: italic;
     color: #666;
     margin-bottom: 0.5rem;
+}
+.project a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project a:hover {
+    text-decoration: underline;
 }
 </style>
