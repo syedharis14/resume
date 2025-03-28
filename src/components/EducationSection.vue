@@ -9,22 +9,16 @@
     </section>
 </template>
 
-<script setup>
-// No additional logic needed
-</script>
-
 <style scoped>
-.education {
-    margin-bottom: 2rem;
-}
 .education-item {
-    margin-bottom: 1rem;
+    margin: 0.5rem 0;
 }
+
 .institution {
-    font-weight: bold;
+    font-weight: 600;
 }
+
 .duration {
-    font-style: italic;
     color: #666;
 }
 </style>

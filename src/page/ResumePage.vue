@@ -25,13 +25,3 @@ import ProfileSection from "#components/ProfileSection.vue";
 import ProjectsSection from "#components/ProjectsSection.vue";
 import TechnicalSkillsSection from "#components/TechnicalSkillsSection.vue";
 </script>
-
-<style scoped>
-.cv-container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-</style>

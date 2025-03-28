@@ -7,28 +7,36 @@
             <li>Phone: 03135183127</li>
             <li>
                 LinkedIn:
-                <a href="https://linkedin.com/in/syed-haris-024295184" target="_blank"> syed-haris-024295184 </a>
+                <a href="https://linkedin.com/in/syed-haris-024295184" target="_blank">syed-haris-024295184</a>
             </li>
             <li>Address: ASKARI 11</li>
         </ul>
     </header>
 </template>
 
-<script setup>
-// No additional logic needed here
-</script>
-
 <style scoped>
 .header {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
+
 .contact-info {
     list-style: none;
     padding: 0;
     margin: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
 }
+
 .contact-info li {
-    margin: 0.2rem 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-info a {
+    color: inherit;
+    text-decoration: none;
 }
 </style>
