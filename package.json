@@ -10,7 +10,8 @@
         "export": "npm run build && node scripts/generate-pdf.js",
         "prepare": "husky install",
         "test": "echo \"No tests yet...\" && exit 0",
-        "format": "prettier --write \"src/**/*.{js,vue,css,html}\""
+        "format": "prettier --write \"src/**/*.{js,vue,css,html}\"",
+        "deploy": "npm run build && gh-pages -d dist"
     },
     "lint-staged": {
         "*.{js,vue,css,html}": [
@@ -30,6 +31,7 @@
         "eslint-config-prettier": "^10.1.1",
         "eslint-plugin-prettier": "^5.2.5",
         "eslint-plugin-vue": "^10.0.0",
+        "gh-pages": "^6.3.0",
         "husky": "^8.0.0",
         "lint-staged": "^15.5.0",
         "prettier": "^3.5.3",
