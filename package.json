@@ -13,7 +13,10 @@
         "format": "prettier --write \"src/**/*.{js,vue,css,html}\""
     },
     "lint-staged": {
-        "*.{js,vue}": "eslint --fix"
+        "*.{js,vue,css,html}": [
+            "prettier --write",
+            "eslint --fix"
+        ]
     },
     "dependencies": {
         "vue": "^3.5.13"
