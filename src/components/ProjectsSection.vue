@@ -44,6 +44,17 @@ const projects = [
             "Designed & implemented multi-tenancy with Sequelize ORM.",
             "Built an admin panel for internal teams to manage trips & partnerships."
         ]
+    },
+    {
+        name: "git-ai-commit (NPM Package)",
+        tech: "Node.js, OpenAI API, Git",
+        duration: "2025",
+        details: [
+            "Developed an AI-powered CLI tool for auto-generating Git commit messages.",
+            "Integrates with OpenAI to provide structured commit messages based on code changes.",
+            "Published on NPM with automated CI/CD workflow."
+        ],
+        link: "https://www.npmjs.com/package/@syedharis14/git-ai-commit"
     }
 ];
 </script>

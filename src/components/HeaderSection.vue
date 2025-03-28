@@ -11,6 +11,14 @@
             </li>
             <li>Address: ASKARI 11</li>
         </ul>
+        <div class="npm-badge">
+            <a href="https://www.npmjs.com/package/@syedharis14/git-ai-commit" target="_blank">
+                <img
+                    src="https://img.shields.io/npm/v/@syedharis14/git-ai-commit.svg?style=plastic"
+                    alt="NPM Version"
+                />
+            </a>
+        </div>
     </header>
 </template>
 
@@ -38,5 +46,15 @@
 .contact-info a {
     color: inherit;
     text-decoration: none;
+}
+.npm-badge {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.npm-badge img {
+    width: 100px;
+    height: auto;
 }
 </style>
